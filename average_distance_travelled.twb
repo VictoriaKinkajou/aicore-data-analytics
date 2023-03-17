@@ -1,0 +1,619 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20231.23.0310.1044                               -->
+<workbook original-version='18.1' source-build='2023.1.0 (20231.23.0310.1044)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='flights (flights_analytics_database)' inline='true' name='federated.08mci0513v13g017nc30o0v4w9v1' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='postgres.cyfpfapllate.eu-west-1.rds.amazonaws.com' name='postgres.0nq3mwk0beogk114cl0y00kdh6yl'>
+            <connection authentication='username-password' class='postgres' dbname='flights_analytics_database' one-time-sql='' port='5432' server='postgres.cyfpfapllate.eu-west-1.rds.amazonaws.com' username='postgres' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='postgres.0nq3mwk0beogk114cl0y00kdh6yl' name='flights' table='[public].[flights]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy' name='year' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='postgres.0nq3mwk0beogk114cl0y00kdh6yl' name='flights' table='[public].[flights]' type='table'>
+          <columns>
+            <column datatype='date' date-parse-format='yyyy' name='year' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>year</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[year]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>month</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[month]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>month</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofmonth</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofmonth]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofmonth</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dayofweek</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[dayofweek]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dayofweek</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>deptime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[deptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>deptime</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsdeptime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crsdeptime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsdeptime</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrtime</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crsarrtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crsarrtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crsarrtime</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>uniquecarrier</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[uniquecarrier]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>uniquecarrier</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>flightnum</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[flightnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>flightnum</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tailnum</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tailnum]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>tailnum</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>actualelapsedtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[actualelapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>actualelapsedtime</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>crselapsedtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[crselapsedtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>crselapsedtime</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>airtime</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[airtime]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>airtime</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>arrdelay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[arrdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>arrdelay</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>depdelay</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[depdelay]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>depdelay</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>origin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[origin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>origin</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dest</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dest]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>dest</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <width>2147483647</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='TypeIsVarchar'>&quot;true&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distance</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[distance]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>distance</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>taxiin</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[taxiin]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>taxiin</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>taxiout</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[taxiout]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>taxiout</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>cancelled</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[cancelled]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>cancelled</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>diverted</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[diverted]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>diverted</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>3</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[flights]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>10</precision>
+            <contains-null>false</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Average Distance' datatype='real' name='[Calculation_193091839451033600]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='AVG([distance])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='flights' datatype='table' name='[__tableau_internal_object_id__].[flights_F2C5EEA25B484AC8BCE8AE4BCA65083A]' role='measure' type='quantitative' />
+      <column caption='Actualelapsedtime' datatype='integer' name='[actualelapsedtime]' role='measure' type='quantitative' />
+      <column caption='Airtime' datatype='integer' name='[airtime]' role='measure' type='quantitative' />
+      <column caption='Arrdelay' datatype='integer' name='[arrdelay]' role='measure' type='quantitative' />
+      <column caption='Arrtime' datatype='integer' name='[arrtime]' role='measure' type='quantitative' />
+      <column caption='Cancelled' datatype='integer' name='[cancelled]' role='measure' type='quantitative' />
+      <column caption='Crsarrtime' datatype='integer' name='[crsarrtime]' role='measure' type='quantitative' />
+      <column caption='Crsdeptime' datatype='integer' name='[crsdeptime]' role='measure' type='quantitative' />
+      <column caption='Crselapsedtime' datatype='integer' name='[crselapsedtime]' role='measure' type='quantitative' />
+      <column caption='Dayofmonth' datatype='integer' name='[dayofmonth]' role='measure' type='quantitative' />
+      <column caption='Dayofweek' datatype='integer' name='[dayofweek]' role='measure' type='quantitative' />
+      <column caption='Depdelay' datatype='integer' name='[depdelay]' role='measure' type='quantitative' />
+      <column caption='Deptime' datatype='integer' name='[deptime]' role='measure' type='quantitative' />
+      <column caption='Dest' datatype='string' name='[dest]' role='dimension' type='nominal' />
+      <column caption='Distance' datatype='integer' name='[distance]' role='measure' type='quantitative' />
+      <column caption='Diverted' datatype='integer' name='[diverted]' role='measure' type='quantitative' />
+      <column caption='Flightnum' datatype='integer' name='[flightnum]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Month' datatype='integer' name='[month]' role='dimension' type='quantitative' />
+      <column caption='Origin' datatype='string' name='[origin]' role='dimension' type='nominal' />
+      <column caption='Tailnum' datatype='string' name='[tailnum]' role='dimension' type='nominal' />
+      <column caption='Taxiin' datatype='integer' name='[taxiin]' role='measure' type='quantitative' />
+      <column caption='Taxiout' datatype='integer' name='[taxiout]' role='measure' type='quantitative' />
+      <column caption='Uniquecarrier' datatype='string' name='[uniquecarrier]' role='dimension' type='nominal' />
+      <column aggregation='Count' caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United Kingdom&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='flights' id='flights_F2C5EEA25B484AC8BCE8AE4BCA65083A'>
+            <properties context=''>
+              <relation connection='postgres.0nq3mwk0beogk114cl0y00kdh6yl' name='flights' table='[public].[flights]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy' name='year' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Average Distance by Airline'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='flights (flights_analytics_database)' name='federated.08mci0513v13g017nc30o0v4w9v1' />
+          </datasources>
+          <datasource-dependencies datasource='federated.08mci0513v13g017nc30o0v4w9v1'>
+            <column caption='Average Distance' datatype='real' name='[Calculation_193091839451033600]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='AVG([distance])' />
+            </column>
+            <column caption='Distance' datatype='integer' name='[distance]' role='measure' type='quantitative' />
+            <column-instance column='[uniquecarrier]' derivation='None' name='[none:uniquecarrier:nk]' pivot='key' type='nominal' />
+            <column caption='Uniquecarrier' datatype='string' name='[uniquecarrier]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_193091839451033600]' derivation='User' name='[usr:Calculation_193091839451033600:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Count' caption='Year' datatype='date' datatype-customized='true' name='[year]' role='dimension' type='quantitative' />
+            <column-instance column='[year]' derivation='Year' name='[yr:year:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.08mci0513v13g017nc30o0v4w9v1].[yr:year:ok]'>
+            <groupfilter function='member' level='[yr:year:ok]' member='1992' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.08mci0513v13g017nc30o0v4w9v1].[yr:year:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.08mci0513v13g017nc30o0v4w9v1].[usr:Calculation_193091839451033600:qk]</rows>
+        <cols>[federated.08mci0513v13g017nc30o0v4w9v1].[none:uniquecarrier:nk]</cols>
+      </table>
+      <simple-id uuid='{EDF4D71C-AFD4-4A0C-95DC-ACF70F02BB1E}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='Average Distance by Airline'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.08mci0513v13g017nc30o0v4w9v1].[yr:year:ok]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.08mci0513v13g017nc30o0v4w9v1].[none:uniquecarrier:nk]</field>
+            <field>[federated.08mci0513v13g017nc30o0v4w9v1].[yr:year:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5779B0D9-B5C4-465A-B42A-2AA9F14A3827}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='240' name='Average Distance by Airline' width='240'>
+      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
+      RkTIh9bCOAAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
